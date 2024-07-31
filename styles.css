@@ -1,0 +1,140 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    
+    
+}
+
+.container {
+    display: flex;
+    
+    flex-direction: column;
+    
+  
+    
+}
+.item {
+    flex:1
+    
+}
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: hsl(0, 0%, 95%);
+}
+.sedans {
+    max-width: 240px;
+    background-color: hsl(31, 77%, 52%) ;
+    padding: 45px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    
+}
+.suvs {
+    max-width: 240px;
+    background-color: hsl(184, 100%, 22%);
+    padding: 45px;
+    
+}
+.luxury {
+    max-width: 240px;
+    background-color: hsl(179, 100%, 13%) ;
+    padding: 45px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+button{
+    padding: 14px;
+    font-family: "Lexend Deca", sans-serif;
+    max-width: 12em;
+    min-width: 12em;
+    border: 0px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 700;
+
+}
+
+button:hover{
+    cursor: url('./images/pointinghand.svg'), pointer;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.suvs button:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 500px){
+    body{
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .sedans {
+        max-width: 200px;
+        background-color: hsl(31, 77%, 52%) ;
+        padding: 45px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        
+    }
+    .suvs {
+        max-width: 200px;
+        background-color: hsl(184, 100%, 22%);
+        padding: 45px;
+        
+    }
+    .luxury {
+        max-width: 200px;
+        background-color: hsl(179, 100%, 13%) ;
+        padding: 45px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 7px;
+    }
+    button{
+        margin-top: 40px;
+        max-width: 10em;
+        min-width: 10em;
+    }
+    
+    }
